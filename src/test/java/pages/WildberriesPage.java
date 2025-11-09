@@ -9,7 +9,6 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 
 
 public class WildberriesPage {
@@ -22,7 +21,6 @@ public class WildberriesPage {
 
     public WildberriesPage openPage() {
         open("https://www.wildberries.ru/");
-        sleep(4000);
         return this;
     }
 

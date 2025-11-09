@@ -9,7 +9,6 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class SelenidesPage {
     private final ElementsCollection selectLanguage = $$("#languages a");
@@ -18,7 +17,6 @@ public class SelenidesPage {
 
     public SelenidesPage openPage() {
         open("https://ru.selenide.org/");
-        sleep(4000);
         return this;
     }
 
